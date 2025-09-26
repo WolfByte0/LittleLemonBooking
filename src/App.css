@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font: 64pt "Display_serif", serif;
+  font-weight: bold;
+}
+
+h2 {
+  font: 40pt "Subheading", serif;
+  font-weight: normal;
+}
+
+h3 {
+  font: 18pt "Karla", sans-serif;
+  font-weight: normal;
+}
+
+p {
+  font: 18pt "Karla", sans-serif;
+  font-size: 16pt;
+  font-weight: normal;
+  line-height: 1.5;
+  max-width: 65ch;
+  color: #495E57;
+}
+
+button {
+  border-radius: 16px;
+  background-color: #D9D9D9;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+a.button {
+  display: inline-block;   
+  text-decoration: none;  
+  border-radius: 16px;
+  background-color: #D9D9D9;
+  color: inherit;       
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav li{
+  list-style-type:none;
+}
