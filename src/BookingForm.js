@@ -4,7 +4,7 @@ function BookingForm( {availableTimes, dispatchDateChange} ) {
   const [bookingInfo, setBookingInfo] = useState({date: "", time: "", guests: 1, occasion: ""}) 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(bookingInfo);
+    window.submitAPI(bookingInfo);
   }
 
   return (

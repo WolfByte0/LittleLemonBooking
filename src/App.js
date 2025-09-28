@@ -8,9 +8,9 @@ import AboutPage from './AboutPage.js'
 
 function App() {
   const getAvailableTimes = (state, action) => {
-    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+    return window.fetchAPI(new Date(action));
   }
-  const [availableTimes, dispatchDateChange] = useReducer(getAvailableTimes, ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
+  const [availableTimes, dispatchDateChange] = useReducer(getAvailableTimes, window.fetchAPI(new Date()));
 
   return (
     <BrowserRouter>
