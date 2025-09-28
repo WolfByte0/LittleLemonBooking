@@ -1,8 +1,9 @@
 function Main() {
   return (
-    <main>
-      <p>Nel mezzo del cammin di nostra vita mi ritrovai per una selva oscura che la diritta via era smarrita, 
-         ai quanto dir qual'era e' cosa dura esta selva selvaggia e aspra e forte che al pensier mi rinnova la paura</p>
+    <main className="greenBg">
+      <h1 className="yellow">Little Lemon</h1>
+      <h2 className="white">Chicago</h2>
+      <p className="white">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
     </main>
   );
 }
