@@ -3,7 +3,7 @@ import Nav from './Nav.js'
 import BookingForm from './BookingForm.js'
 import Footer from './Footer.js'
 
-function BookingPage({availableTimes, dispatchDateChange}) {
+function BookingPage({availableTimes, dispatchDateChange, handleSubmit}) {
   return (
     <>
       <Header/>
@@ -11,7 +11,7 @@ function BookingPage({availableTimes, dispatchDateChange}) {
       <center>
         <h1 className="yellow">Book a table now</h1>
       </center>
-      <BookingForm availableTimes={availableTimes} dispatchDateChange={dispatchDateChange}/>
+      <BookingForm availableTimes={availableTimes} dispatchDateChange={dispatchDateChange} handleSubmit={handleSubmit}/>
       <Footer/>
     </>
   );

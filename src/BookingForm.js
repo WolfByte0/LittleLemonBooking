@@ -1,14 +1,9 @@
 import { useState } from "react"
 
-function BookingForm( {availableTimes, dispatchDateChange} ) {
+function BookingForm( {availableTimes, dispatchDateChange, handleSubmit} ) {
   const [bookingInfo, setBookingInfo] = useState({date: "", time: "", guests: 1, occasion: ""}) 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    window.submitAPI(bookingInfo);
-  }
-
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={(e) => handleSubmit(e, bookingInfo)}>
       <label htmlFor="res-date">Choose date</label>
       <input type="date" id="res-date" onChange={e => {
         dispatchDateChange(e.target.value);
