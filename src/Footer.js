@@ -1,7 +1,9 @@
 function Footer() {
   return (
     <footer className="greenBg">
-      <p className="white">copyright 2025 Little Lemon</p>
+      <p className="white">
+        © 2025 Little Lemon - Serving Chicago with Mediterranean flavors.
+      </p>
     </footer>
   );
 }

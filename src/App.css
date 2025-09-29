@@ -34,16 +34,37 @@ a.button {
   cursor: pointer;
 }
 
-nav ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+a.button:hover {
+  display: inline-block;   
+  text-decoration: none;  
+  border-radius: 16px;
+  background-color: #F4CE14;
+  color: inherit;       
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
 }
 
-nav li{
-  list-style-type:none;
+a.yellowBtn {
+  display: inline-block;   
+  text-decoration: none;  
+  border-radius: 16px;
+  background-color: #F4CE14;
+  color: inherit;       
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;  
+  gap: 2rem;
+  padding: 0 40px;
+}
+
+nav li {
+  list-style-type: none;
 }
 
 /* MAIN */
@@ -66,6 +87,11 @@ main h1 {
 main h2 {
   width: 80%;      
   margin: 0 auto;  
+}
+
+/* FOOTER */
+footer p{
+  font-size: 0.8rem;
 }
 
 /* BOOKING FORM */
@@ -94,20 +120,46 @@ input, select {
   cursor: pointer;
 }
 
+/* HOME PAGE */
+.image-container {
+  position: relative; 
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;       
+  height: auto;
+  border-radius: 16px;   
+}
+
+.image-container a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center; 
+}
+
+
 /* TEXT */
 
 h1 {
-  font: 64pt "Display_serif", serif;
+  font: 3rem "Display_serif", serif;
   font-weight: bold;
 }
 
 h2 {
-  font: 40pt "Subheading", serif;
+  font: 2rem "Subheading", serif;
   font-weight: normal;
 }
 
 h3 {
-  font: 18pt "Karla", sans-serif;
+  font: 1.8rem "Karla", sans-serif;
   font-weight: normal;
 }
 
